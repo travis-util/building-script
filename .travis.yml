@@ -13,6 +13,7 @@ addons:
     # - gcc-4.9
 install:
 - apt-cache policy libglib2.0-dev
+- bash scripts/install.sh
 - pushd `mktemp --directory`
 # - wget https://poppler.freedesktop.org/$POPPLER.tar.xz
 # - tar --xz --extract --file=$POPPLER.tar.xz
