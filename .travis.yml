@@ -1,0 +1,26 @@
+language: c
+compiler:
+# - clang
+- gcc
+env:
+  global:
+  matrix:
+addons:
+  apt:
+    sources:
+    # - ubuntu-toolchain-r-test
+    packages:
+    # - gcc-4.9
+install:
+- apt-cache policy libglib2.0-dev
+- pushd `mktemp --directory`
+# - wget https://poppler.freedesktop.org/$POPPLER.tar.xz
+# - tar --xz --extract --file=$POPPLER.tar.xz
+- ls --color
+# - cd $POPPLER
+# - ./configure --help
+
+script:
+# - make && make test && make install
+- rmdir `pwd`
+- popd
