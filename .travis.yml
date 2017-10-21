@@ -16,6 +16,7 @@ before_install:
 install:
 - apt-cache policy libglib2.0-dev
 - bash scripts/install.sh
+- curl https://travis-util.github.io/building-script/scripts/install.sh -sSf | bash
 - pushd `mktemp --directory`
 # - wget https://poppler.freedesktop.org/$POPPLER.tar.xz
 # - tar --xz --extract --file=$POPPLER.tar.xz
