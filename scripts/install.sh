@@ -6,4 +6,5 @@ cd `mktemp --directory`
 pwd # do something here
 echo '$Id$'
 echo $DEMO
+
 rmdir `pwd`
