@@ -1,8 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 set -ev # https://docs.travis-ci.com/user/customizing-the-build/
-pushd `mktemp --directory`
+# Cannot be "sourced" because it changes directory
+cd `mktemp --directory`
 
 pwd # do something here
 echo '$Id$'
-
-rmdir `pwd` ; popd
+echo $DEMO
+rmdir `pwd`
