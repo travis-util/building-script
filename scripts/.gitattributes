@@ -1,2 +1,4 @@
+*.bash ident
+*.bash text eol=lf
 *.sh ident
 *.sh text eol=lf
