@@ -1,5 +1,5 @@
 # building-script
-Example script to build on Travis alike
+Example script to build on Travis-like
 
 * https://travis-util.github.io/building-script/
 * https://travis-util.github.io/building-script/scripts/install.sh
